@@ -1,0 +1,287 @@
+.title_container {
+    text-align: center;
+    width: 100%;
+    font-family: 'Arial', 'Helvetica', 'sans-serif';
+    /*font-size: 32px; */
+    background-color: lightgrey;
+    border: 4px solid dimgray;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.title_container h1, .title_container h2 {
+    text-shadow: 2px 2px 4px rgba(179, 147, 211, 0.1),
+               3px 4px 4px rgba(179, 147, 211, 0.15),
+               4px 6px 4px rgba(179, 147, 211, 0.2),
+               5px 8px 4px rgba(179, 147, 211, 0.25);
+}
+
+.grid-container {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(min(100%/3, max(600px, 100%/4)), 1fr));
+    #grid-template-rows: repeat(2, auto);
+    gap: 10px;
+}
+
+
+/*
+    Global CSS properties that are used in multiple instances.
+*/
+
+.grid-item {
+    background-color: lightgrey;
+    padding: 20px;
+    font-family: 'Arial', 'Helvetica', 'sans-serif';
+    font-size: 18px;
+    border: 4px solid dimgray;
+    border-radius: 15px
+}
+
+/* Style properties for the description under the titles of each grid item. */
+.description {
+    background-color: #456585;
+    padding: 10px;
+    border: 4px solid darkgray;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    background-color: #456585;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* CSS related to the text input fields */
+input[type="text" i] {
+    border: 3px solid darkgray;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 35px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+
+/*
+    CSS Related to Widget 1 (Publication Trend Keyword Plotter)
+*/
+.year-container {
+    display: flex;
+    background-color: #456585;
+    color: white;
+    min-width: 200px;
+    width: 38%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.year-input {
+    padding: 8px;
+    margin-bottom: 5px;
+    width: 100px;
+    margin-top: 5px;
+    border: 3px solid darkgray;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+
+/*
+    CSS Related to Widget 2 (Faulty Contact Information Updater)
+*/
+.image-container {
+    max-width: 60%; /* Needed to contain larger images, ie. Dwarkadas, Sandhya */
+    max-height: 450px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 4px solid #ddd;
+    border-radius: 8px;
+}
+
+.w2-data-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.w2-data-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    margin-bottom: 10px;
+}
+
+
+/*
+    CSS related to the Dropdown
+*/
+
+/* Overrides the styling of the x button in the dropdown. */
+.Select-clear {
+    font-size: 25px;
+    font-weight: bold;
+    color: #456585;
+}
+
+/* Holds the styling for the dropdown menu that is actually seen. */
+.Select-control {
+    line-height: 40px;
+    border-color: darkgray;
+    border-width: 4px;
+    border-radius: 15px;
+    width: 60% !important;
+    margin-top: 10px;
+}
+
+/* Aligns the text inside the dropdown menus so it is centered. */
+.Select--single>.Select-control .Select-value, .Select-placeholder
+{
+    margin-top: 3px;
+}
+
+/* Stylizes the dropdown options background color when you hover over */
+.VirtualizedSelectFocusedOption
+{
+    background-color: #b8d98a; /* lime green */
+}
+
+
+/*
+    CSS related to the DataTable
+*/
+
+/* This styles the filter row inside a DataTable */
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .dash-filter > div input[type="text"] {
+    text-align: left;
+}
+
+/* Styling for the sort arrow */
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th .column-header--sort {
+    cursor: crosshair !important;
+    padding-right: 5px;
+    color: #b8d98a;
+    line-height: 35px;
+}
+
+/* Sets the styling for the Table container as a whole */
+.dash-table-container {
+    margin-top: 15px;
+}
+
+/* Sets the styling for the DataTable data cells. */
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td {
+    line-height: 35px;
+    padding-left: 10px !important;
+    font-size: 14px;
+}
+
+/* Sets the styling for the DataTable header row */
+th.dash-header div span {
+    background-color: #456585;
+    color: white;
+    line-height: 40px;
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+/*
+    CSS related to the button in the image widget (Widget 2)
+*/
+.button {
+  appearance: none;
+  background-color: white;
+  border: 3px solid dimgray;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 18px;
+  font-weight: 600;
+  /*line-height: normal;*/
+    line-height: 12px;
+  margin: 0;
+  height: 50px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 150px;
+  will-change: transform;
+}
+
+.button:disabled {
+  pointer-events: none;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #456585;
+    border: 3px solid white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+/*
+    CSS Styles for the information card.
+*/
+.card {
+  width: 200px;
+  height: 60px;
+  display: flex;
+    background-color: dimgray;
+  border: 2px solid dimgray;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.text-side {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: white;
+}
+
+.number-side {
+  width: 35%;
+  background-color: #456585;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    color: white;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
