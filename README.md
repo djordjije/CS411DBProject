@@ -4,7 +4,7 @@ Group:
 Mark Kraman (mkraman2)  
 George Vojvodic (dvojvo2)   
 ---
-![Dashboard Default View](/imgs/dashboard_overview.png)
+![Dashboard Default View](/imgs/Dashboard_Overview.PNG)
 ---
 
 ## Table of Contents
